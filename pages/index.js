@@ -39,7 +39,7 @@ export default function Page() {
         <div className='grid grid-cols-2 lg:grid-cols-4'>
           <Link href="/thanks">
             <div className='bg-indigo-900 py-12 hover:bg-indigo-800 transition duration-300 m-4 p-4 rounded-2xl shadow-xl'>
-              <div className='text-2xl font-bold text-center text-white'>스태프</div>
+              <div className='text-2xl font-bold text-center text-white'>참가자</div>
             </div>
           </Link>
           <Link href="/poster">
