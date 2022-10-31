@@ -10,6 +10,14 @@ export default function Page() {
         <title>소프트웨어 과제연구 발표회</title>
       </Head>
       <div className="w-full h-screen flex bg-slate-900 justify-center items-center">
+        <div>
+          <div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+
+          </div>
+        </div>
         <div className="w-4/5 h-4/5 text-white text-5xl flex sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
           <div className="my-auto">
             2022
