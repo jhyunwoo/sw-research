@@ -48,12 +48,12 @@ export default function Page() {
             </div>
           </Link>
           <Link href="http://it.cnsa.hs.kr">
-            <div className='bg-blue-900 py-12 hover:bg-blue-800 transition duration-300 m-4 p-4 rounded-2xl shadow-xl'>
+            <div className='bg-blue-800 py-12 hover:bg-blue-700 transition duration-300 m-4 p-4 rounded-2xl shadow-xl'>
               <div className='text-2xl font-bold text-center text-white'>CNSA IT과정</div>
             </div>
           </Link>
           <Link href="https://cnsa.hs.kr">
-            <div className='bg-blue-900 py-12 hover:bg-blue-800 transition duration-300 m-4 p-4 rounded-2xl shadow-xl'>
+            <div className='bg-blue-600 py-12 hover:bg-blue-500 transition duration-300 m-4 p-4 rounded-2xl shadow-xl'>
               <div className='text-2xl font-bold text-center text-white'>충남삼성고</div>
             </div>
           </Link>
