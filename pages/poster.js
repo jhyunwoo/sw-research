@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Tab } from '@headlessui/react'
 import Head from 'next/head'
-import Link from 'next/link'
+import Header from "../components/header";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -12,11 +12,111 @@ export default function Example() {
     창작물: [
       {
         id: 1,
-        title: 'React Native와 가속도 센서를 활용한 거북목 예방 앱',
-        researcher: '박성철'
+        title: 'Android studio를 이용한 스트레스 해소 방법 추천 어플',
+        researcher: '우승아 백승하'
       },
       {
         id: 2,
+        title: "Unity를 사용한 Vurtual Physics Lab 구현",
+        researcher: '이여명 권원재 전규진',
+      },
+      {
+        id: 3,
+        title: "실버세대를 위한 UI/UX 가이드라인을 바탕으로 기존 앱에 대한 적용 사례 분석 및 개선안 제시",
+        researcher: '한소윤',
+      },
+      {
+        id: 4,
+        title: "Runway ML 및 P5.js를 사용한 StyleGAN 전환",
+        researcher: '김민서',
+      },
+      {
+        id: 5,
+        title: "Android Studio를 이용한 청소년 토토 상담 자동 챗봇 어플",
+        researcher: '이승주',
+      },
+      {
+        id: 6,
+        title: "단축키를 이용한 웹사이트 자동 이동",
+        researcher: '심상현',
+      },
+      {
+        id: 7,
+        title: "학교 홍보 영상에서의 모션 그래픽(Motion Graphics) 활용 가능성 연구 - After Effects를 중심으로 -",
+        researcher: '이효민',
+      },
+      {
+        id: 8,
+        title: "역사 학습을 위한 역사 체험 게임 제작",
+        researcher: '변상빈 곽은규',
+      },
+      {
+        id: 9,
+        title: "unity를 이용한 학교 홍보 게임 제작",
+        researcher: '정윤승 임진성 박유민',
+      },
+      {
+        id: 10,
+        title: "가정용 가스 중독사고 방지 장치계발",
+        researcher: '김승원',
+      },
+      {
+        id: 11,
+        title: "3D 렌더링 기법 분석과 UE5를 통한 가상환경 구축 -Rasterizing과 Raytracing을 중심으로-",
+        researcher: '윤기완',
+      },
+      {
+        id: 12,
+        title: "So you've bought coffee... now what?",
+        researcher: '2h ago',
+      },
+      {
+        id: 13,
+        title: "So you've bought coffee... now what?",
+        researcher: '2h ago',
+      },
+      {
+        id: 14,
+        title: "So you've bought coffee... now what?",
+        researcher: '2h ago',
+      },
+      {
+        id: 15,
+        title: "So you've bought coffee... now what?",
+        researcher: '2h ago',
+      },
+      {
+        id: 16,
+        title: "So you've bought coffee... now what?",
+        researcher: '2h ago',
+      },
+      {
+        id: 17,
+        title: "So you've bought coffee... now what?",
+        researcher: '2h ago',
+      },
+      {
+        id: 18,
+        title: "So you've bought coffee... now what?",
+        researcher: '2h ago',
+      },
+      {
+        id: 19,
+        title: "So you've bought coffee... now what?",
+        researcher: '2h ago',
+      },
+      {
+        id: 20,
+        title: "So you've bought coffee... now what?",
+        researcher: '2h ago',
+      },
+      {
+        id: 21,
+        title: "So you've bought coffee... now what?",
+        researcher: '2h ago',
+      },
+      {
+        id: 22,
         title: "So you've bought coffee... now what?",
         researcher: '2h ago',
       },
@@ -24,25 +124,35 @@ export default function Example() {
     보고서: [
       {
         id: 1,
-        title: 'Is tech making coffee better or worse?',
-        researcher: 'Jan 7',
+        title: 'CNN(합성곱 신경망)을 이용한 이미지 분류에 대한 연구',
+        researcher: '김린우',
       },
       {
         id: 2,
-        title: 'The most innovative things happening in coffee',
-        researcher: 'Mar 19',
+        title: '추간판 탈출증에 대한 보존적 치료의 효과:체계적 문헌고찰 및 메타분석',
+        researcher: '최현우',
       },
     ],
     에세이: [
       {
         id: 1,
-        title: 'Ask Me Anything: 10 answers to your questions about coffee',
-        researcher: '2d ago',
+        title: 'BCI 기술의 보안 강화에 관한 연구',
+        researcher: '김도임',
       },
       {
         id: 2,
-        title: "The worst advice we've ever heard about coffee",
-        researcher: '4d ago',
+        title: "Ai를 사용한 3D 모조 총기 테러 예방",
+        researcher: '최은성',
+      },
+      {
+        id: 3,
+        title: "TextRank를 이용한 독서 지문 분석",
+        researcher: '나우혁',
+      },
+      {
+        id: 4,
+        title: "AI와 빅데이터를 활용한 첨단의학 -sofrware 및 장단점을 중심으로-",
+        researcher: '박민경',
       },
     ],
   })
@@ -52,19 +162,16 @@ export default function Example() {
       <Head>
         <title>포스터</title>
       </Head>
-      <div className='w-screen bg-slate-900 flex flex-col justify-center items-center'>
-        <div>
-          <Link href="/">
-            <div>2022 소프트웨어 과제연구 발표회</div>
-          </Link>
-        </div>
+      <Header/>
+      <div className='w-screen bg-slate-900 flex flex-col justify-center items-center py-32'>
+
         <div className='font-bold text-4xl text-white'>포스터</div>
       </div>
 
-      <div className='w-screen flex justify-center items-center'>
-        <div className="w-full max-w-md px-2 py-16 sm:px-0">
+      <div className='w-screen flex justify-center'>
+        <div className="w-full max-w-md px-2 py-4 sm:px-0">
           <Tab.Group>
-            <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
+            <Tab.List className="flex space-x-1 rounded-xl bg-blue-600/20 p-1">
               {Object.keys(categories).map((category) => (
                 <Tab
                   key={category}
@@ -74,7 +181,7 @@ export default function Example() {
                       'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
                       selected
                         ? 'bg-white shadow'
-                        : 'text-blue-100 hover:bg-white/[0.12] hover:text-white'
+                        : 'text-blue-900 hover:bg-white/[0.12] hover:text-white'
                     )
                   }
               >
