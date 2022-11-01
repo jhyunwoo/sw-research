@@ -17,19 +17,12 @@ export default function Page() {
       <Header />
       <div className="w-full h-screen flex bg-slate-900 justify-center items-center flex-col">
         <div className="w-4/5 h-4/5 text-white flex flex-col text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl ">
-          {/* <div className="my-auto">
-            2022
-            <br />
-            소프트웨어
-            <br />
-            과제연구 발표회
-          </div> */}
           <div className="my-auto">
-            <AnimatedTextWord text="2022" className="" />
+            <AnimatedTextWord text="2022" />
 
-            <AnimatedTextWord text="소프트웨어" className="" />
+            <AnimatedTextWord text="소프트웨어" />
 
-            <AnimatedTextWord text="과제연구 발표회" className="" />
+            <AnimatedTextWord text="과제연구 발표회" />
           </div>
         </div>
       </div>

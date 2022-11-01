@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Tab } from "@headlessui/react";
 import Head from "next/head";
 import Header from "../components/header";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "../components/footer";
+import AnimatedTextWord from "../components/AnimatedTextWord";
 
 import 보고서01 from "../public/보고서01.jpg";
 import 보고서02 from "../public/보고서02.jpg";
@@ -291,7 +291,7 @@ export default function Example() {
       </Head>
       <Header />
       <div className="w-screen bg-slate-900 flex flex-col justify-center items-center py-32">
-        <div className="font-bold text-4xl text-white">포스터</div>
+        <AnimatedTextWord text="포스터" />
       </div>
       <div>
         <div className="flex justify-around p-2 ">

@@ -1,6 +1,7 @@
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Head from "next/head";
+import AnimatedTextWord from "../components/AnimatedTextWord";
 export default function Thanks() {
   return (
     <div>
@@ -10,9 +11,7 @@ export default function Thanks() {
       <Header />
       <div className="flex justify-center items-center flex-col">
         <div className="bg-slate-900 p-10 w-full flex justify-center items-center py-24">
-          <div className="text-white text-4xl text-center">
-            참가자 및 스태프
-          </div>
+          <AnimatedTextWord text="참가자 및 스태프" />
         </div>
 
         <div className="mt-8">
