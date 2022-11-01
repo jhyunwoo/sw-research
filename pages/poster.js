@@ -104,7 +104,7 @@ export default function Example() {
       },
       {
         id: 10,
-        title: "가정용 가스 중독사고 방지 장치 개발",
+        title: "다양한 기계 장치의 작동원리",
         researcher: "김승원",
         poster: 창작물10,
       },
