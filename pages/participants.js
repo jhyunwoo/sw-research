@@ -1,9 +1,14 @@
-export default function Thanks(){
-    return(
-        <div>
-            <div className="flex justify-center items-center flex-col">
+import Footer from "../components/footer";
+import Header from "../components/header";
+export default function Thanks() {
+  return (
+    <div>
+      <Header />
+      <div className="flex justify-center items-center flex-col">
         <div className="bg-slate-900 p-10 w-full flex justify-center items-center py-24">
-            <div className="text-white text-4xl text-center">소프트웨어 과제연구 발표회 참가자 및 스태프</div>
+          <div className="text-white text-4xl text-center">
+            참가자 및 스태프
+          </div>
         </div>
 
         <div className="mt-8">
@@ -122,6 +127,7 @@ export default function Thanks(){
           </div>
         </div>
       </div>
-        </div>
-    )
+      <Footer />
+    </div>
+  );
 }

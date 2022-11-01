@@ -3,6 +3,8 @@ import { Tab } from "@headlessui/react";
 import Head from "next/head";
 import Header from "../components/header";
 import Image from "next/image";
+import Link from "next/link";
+import Footer from "../components/footer";
 
 import 보고서01 from "../public/보고서01.jpg";
 import 보고서02 from "../public/보고서02.jpg";
@@ -12,10 +14,12 @@ import 보고서05 from "../public/보고서05.jpg";
 import 보고서06 from "../public/보고서06.jpg";
 import 보고서07 from "../public/보고서07.jpg";
 import 보고서08 from "../public/보고서08.jpg";
+import 보고서09 from "../public/보고서09.jpg";
 import 에세이01 from "../public/에세이01.jpg";
 import 에세이02 from "../public/에세이02.jpg";
 import 에세이03 from "../public/에세이03.jpg";
 import 에세이04 from "../public/에세이04.jpg";
+import 에세이05 from "../public/에세이05.jpg";
 import 창작물01 from "../public/창작물01.jpg";
 import 창작물02 from "../public/창작물02.jpg";
 import 창작물03 from "../public/창작물03.jpg";
@@ -195,7 +199,7 @@ export default function Example() {
         title:
           "추간판 탈출증에 대한 보존적 치료의 효과:체계적 문헌고찰 및 메타분석",
         researcher: "최현우",
-        poster: "",
+        poster: 보고서09,
       },
       {
         id: 3,
@@ -249,7 +253,7 @@ export default function Example() {
         id: 1,
         title: "BCI 기술의 보안 강화에 관한 연구",
         researcher: "김도임",
-        poster: "",
+        poster: 에세이05,
       },
       {
         id: 2,
@@ -334,11 +338,18 @@ export default function Example() {
                       src={p.poster}
                       alt={p.title}
                       className={" mx-auto"}
+                      onClick={() => console.log(p.poster)}
                     ></Image>
-                    <div className="text-lg lg:text-xl xl:text-2xl my-2">
+
+                    <div className="text-lg lg:text-xl xl:text-2xl my-2 font-semibold">
                       {p.title}
                     </div>
                     <div>{p.researcher}</div>
+                    <Link href={`${p.poster.src}`} className="mt-auto">
+                      <div className="mx-auto bg-slate-700 text-white text-center hover:bg-slate-500 transition duration-300 py-1 rounded-lg mt-2 ">
+                        포스터 자세히 보기
+                      </div>
+                    </Link>
                   </div>
                 );
               })
@@ -353,11 +364,17 @@ export default function Example() {
                       src={p.poster}
                       alt={p.title}
                       className={" mx-auto"}
+                      onClick={() => console.log(p.poster)}
                     ></Image>
-                    <div className="text-lg lg:text-xl xl:text-2xl my-2">
+                    <div className="text-lg lg:text-xl xl:text-2xl my-2 font-semibold">
                       {p.title}
                     </div>
                     <div>{p.researcher}</div>
+                    <Link href={`${p.poster.src}`}>
+                      <div className="mx-auto bg-slate-700 text-white text-center hover:bg-slate-500 transition duration-300 py-1 rounded-lg mt-2 ">
+                        포스터 자세히 보기
+                      </div>
+                    </Link>
                   </div>
                 );
               })
@@ -371,16 +388,23 @@ export default function Example() {
                       src={p.poster}
                       alt={p.title}
                       className={" mx-auto"}
+                      onClick={() => console.log(p.poster)}
                     ></Image>
-                    <div className="text-lg lg:text-xl xl:text-2xl my-2">
+                    <div className="text-lg lg:text-xl xl:text-2xl my-2 font-semibold">
                       {p.title}
                     </div>
                     <div>{p.researcher}</div>
+                    <Link href={`${p.poster.src}`}>
+                      <div className="mx-auto bg-slate-700 text-white text-center hover:bg-slate-500 transition duration-300 py-1 rounded-lg mt-2 ">
+                        포스터 자세히 보기
+                      </div>
+                    </Link>
                   </div>
                 );
               })}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
