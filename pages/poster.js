@@ -43,10 +43,6 @@ import 창작물20 from "../public/창작물20.jpg";
 import 창작물21 from "../public/창작물21.jpg";
 import 창작물22 from "../public/창작물22.jpg";
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
-
 export default function Example() {
   let [poster] = useState({
     창작물: [
@@ -283,7 +279,6 @@ export default function Example() {
     ],
   });
   const [type, setType] = useState("product");
-
   return (
     <div className="bg-slate-50">
       <Head>
@@ -338,7 +333,7 @@ export default function Example() {
                       src={p.poster}
                       alt={p.title}
                       className={" mx-auto"}
-                      onClick={() => console.log(p.poster)}
+                      placeholder="blur"
                     ></Image>
 
                     <div className="text-lg lg:text-xl xl:text-2xl my-2 font-semibold">
@@ -364,7 +359,7 @@ export default function Example() {
                       src={p.poster}
                       alt={p.title}
                       className={" mx-auto"}
-                      onClick={() => console.log(p.poster)}
+                      placeholder="blur"
                     ></Image>
                     <div className="text-lg lg:text-xl xl:text-2xl my-2 font-semibold">
                       {p.title}
@@ -388,7 +383,7 @@ export default function Example() {
                       src={p.poster}
                       alt={p.title}
                       className={" mx-auto"}
-                      onClick={() => console.log(p.poster)}
+                      placeholder="blur"
                     ></Image>
                     <div className="text-lg lg:text-xl xl:text-2xl my-2 font-semibold">
                       {p.title}
