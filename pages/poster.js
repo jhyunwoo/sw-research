@@ -260,7 +260,7 @@ export default function Example() {
       {
         id: 3,
         title: "TextRank를 이용한 독서 지문 분석",
-        researcher: "나우혁",
+        researcher: "나우혁 김성범",
         poster: 에세이02,
       },
       {
