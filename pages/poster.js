@@ -108,7 +108,7 @@ export default function Example() {
       },
       {
         id: 10,
-        title: "가정용 가스 중독사고 방지 장치계발",
+        title: "가정용 가스 중독사고 방지 장치 개발",
         researcher: "김승원",
         poster: 창작물10,
       },
