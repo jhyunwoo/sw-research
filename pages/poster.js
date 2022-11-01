@@ -58,7 +58,7 @@ export default function Example() {
       },
       {
         id: 2,
-        title: "Unity를 사용한 Vurtual Physics Lab 구현",
+        title: "Unity를 사용한 Virtual Physics Lab 구현",
         researcher: "이여명 권원재 전규진",
         poster: 창작물02,
       },
