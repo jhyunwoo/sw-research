@@ -217,7 +217,7 @@ export default function Example() {
       {
         id: 5,
         title:
-          "Face Dection의 정확도에 대한 연구와 가상 출석 시스템 구현에 대한 제언",
+          "Face Detection의 정확도에 대한 연구와 가상 출석 시스템 구현에 대한 제언",
         researcher: "안관영 김다인",
         poster: 보고서04,
       },
