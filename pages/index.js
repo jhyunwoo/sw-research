@@ -1,9 +1,12 @@
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
-import schoolmap from "../public/schoolmap.gif";
+import school from "../public/school.png";
 import Header from "../components/header";
 import Footer from "../components/footer";
+
+//import AnimatedTextCharacter from "../component/AnimatedTextCharacter";
+import AnimatedTextWord from "../components/AnimatedTextWord";
 
 export default function Page() {
   return (
@@ -13,13 +16,20 @@ export default function Page() {
       </Head>
       <Header />
       <div className="w-full h-screen flex bg-slate-900 justify-center items-center flex-col">
-        <div className="w-4/5 h-4/5 text-white text-5xl flex sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
-          <div className="my-auto">
+        <div className="w-4/5 h-4/5 text-white flex flex-col text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl ">
+          {/* <div className="my-auto">
             2022
             <br />
             소프트웨어
             <br />
             과제연구 발표회
+          </div> */}
+          <div className="my-auto">
+            <AnimatedTextWord text="2022" className="" />
+
+            <AnimatedTextWord text="소프트웨어" className="" />
+
+            <AnimatedTextWord text="과제연구 발표회" className="" />
           </div>
         </div>
       </div>
@@ -32,7 +42,7 @@ export default function Page() {
               충남삼성고등학교 갤럭시 홀
             </div>
             <Image
-              src={schoolmap}
+              src={school}
               alt="school map"
               className="rounded-xl mx-auto"
             ></Image>
