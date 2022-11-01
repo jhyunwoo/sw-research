@@ -1,8 +1,12 @@
 import Footer from "../components/footer";
 import Header from "../components/header";
+import Head from "next/head";
 export default function Thanks() {
   return (
     <div>
+      <Head>
+        <title>참가자 및 스태프</title>
+      </Head>
       <Header />
       <div className="flex justify-center items-center flex-col">
         <div className="bg-slate-900 p-10 w-full flex justify-center items-center py-24">
