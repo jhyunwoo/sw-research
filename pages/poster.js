@@ -270,7 +270,7 @@ export default function Example() {
       {
         id: 4,
         title:
-          "AI와 빅데이터를 활용한 첨단의학 -sofrware 및 장단점을 중심으로-",
+          "AI와 빅데이터를 활용한 첨단의학 -software 및 장단점을 중심으로-",
         researcher: "박민경",
         poster: 에세이03,
       },
