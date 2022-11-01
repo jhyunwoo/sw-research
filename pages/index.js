@@ -60,28 +60,28 @@ export default function Page() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-4">
           <Link href="/participants">
             <div className="bg-indigo-900 py-12 hover:bg-indigo-800 transition duration-300 p-4 rounded-2xl shadow-xl">
-              <div className="text-2xl font-bold text-center text-white">
+              <div className="text-xl md:text-2xl font-bold text-center text-white">
                 참가자
               </div>
             </div>
           </Link>
           <Link href="/poster">
             <div className="bg-blue-900 py-12 hover:bg-blue-800 transition duration-300 p-4 rounded-2xl shadow-xl">
-              <div className="text-2xl font-bold text-center text-white">
+              <div className="text-xl md:text-2xl font-bold text-center text-white">
                 발표 포스터
               </div>
             </div>
           </Link>
           <Link href="http://it.cnsa.hs.kr">
             <div className="bg-blue-800 py-12 hover:bg-blue-700 transition duration-300 p-4 rounded-2xl shadow-xl">
-              <div className="text-2xl font-bold text-center text-white">
+              <div className="text-xl md:text-2xl font-bold text-center text-white">
                 CNSA IT과정
               </div>
             </div>
           </Link>
           <Link href="https://cnsa.hs.kr">
             <div className="bg-blue-600 py-12 hover:bg-blue-500 transition duration-300 p-4 rounded-2xl shadow-xl">
-              <div className="text-2xl font-bold text-center text-white">
+              <div className="text-xl md:text-2xl font-bold text-center text-white">
                 충남삼성고
               </div>
             </div>
