@@ -243,16 +243,6 @@ export default function Example() {
         researcher: "김연준",
         poster: 보고서08,
       },
-      {
-        id: 3,
-        title: '실제 영상 촬영 환경에서의 YOLO V7 기반 객체 탐지 정확도 향상에 관한 연구',
-        researcher: '전현우',
-      },
-      {
-        id: 4,
-        title: '음성을 이용한 공포도 측정 및 범죄율 예방 방법',
-        researcher: '권도연',
-      },
     ],
     에세이: [
       {
