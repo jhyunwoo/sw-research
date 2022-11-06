@@ -289,7 +289,7 @@ export default function Example() {
         <AnimatedTextWord text="포스터" />
       </div>
       <div>
-        <div className="flex justify-around p-2 ">
+        <div className={"flex justify-around p-2"}>
           <div
             className={`${
               type === "product"
@@ -377,7 +377,7 @@ export default function Example() {
                 return (
                   <div
                     key={p.id}
-                    className={"bg-white p-3 rounded-xl shadow-lg"}
+                    className={"bg-white p-3 rounded-xl shadow-lg m-"}
                   >
                     <Image
                       src={p.poster}
