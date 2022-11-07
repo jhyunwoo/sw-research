@@ -200,7 +200,7 @@ export default function Example() {
       {
         id: 3,
         title:
-          "실제 영상 촬영 환경에서의 YOLO V7 기반 객체 탐지 정확도 향상에 관한 연구",
+          "영상 데이터에서의 YOLO V7 기반 객체 탐지 정확도 향상에 관한 연구",
         researcher: "전현우",
         poster: 보고서02,
       },
