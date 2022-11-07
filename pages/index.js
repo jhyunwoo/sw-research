@@ -7,8 +7,16 @@ import Footer from "../components/footer";
 
 //import AnimatedTextCharacter from "../component/AnimatedTextCharacter";
 import AnimatedTextWord from "../components/AnimatedTextWord";
+import { useEffect, useState } from "react";
 
 export default function Page() {
+  const [trigger, setTrigger] = useState(false)
+  useEffect(()=> {
+    const timestamp = new Date().getTime();
+    if(timestamp>1667913000000){
+      setTrigger(true)
+    }
+  },[])
   return (
     <div className="bg-slate-100 w-screen relative">
       <Head>
@@ -29,6 +37,24 @@ export default function Page() {
 
       <div className="w-full bg-slate-100">
         <div className="grid grid-cols-1 sm:grid-cols-2">
+
+          {trigger ? (<div className="bg-slate-800 m-4 p-4 rounded-2xl shadow-xl">
+            <div className="flex justify-center items-center flex-col w-full h-full px-2">
+              <div className="text-2xl font-bold text-center text-white">2023 IT편집부 지원</div>
+              <div className="w-full bg-slate-50 text-center p-4 mt-2 rounded-xl text-xl font-bold text-slate-900 hover:bg-slate-900 hover:text-white transition duration-300 hover:scale-105">
+                지원하기
+              </div>
+            </div>
+          </div>) :"" }
+          {/* <div className="bg-slate-800 m-4 p-4 rounded-2xl shadow-xl">
+            <div className="flex justify-center items-center flex-col w-full h-full px-2">
+              <div className="text-2xl font-bold text-center text-white">2023 IT편집부 지원</div>
+              <div className="w-full bg-slate-50 text-center p-4 mt-2 rounded-xl text-xl font-bold text-slate-900 hover:bg-slate-900 hover:text-white transition duration-300 hover:scale-105">
+                지원하기
+              </div>
+            </div>
+          </div> */}
+
           <div className="bg-white m-4 p-4 rounded-2xl shadow-xl">
             <div className="text-2xl font-bold text-center">장소</div>
             <div className="my-3 font-semibold text-center text-xl">
