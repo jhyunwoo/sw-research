@@ -18,7 +18,7 @@ export default function Page() {
     }
   },[])
   return (
-    <div className="bg-slate-100 w-screen relative">
+    <div className="bg-slate-100 w-full relative">
       <Head>
         <title>소프트웨어 과제연구 발표회</title>
       </Head>
