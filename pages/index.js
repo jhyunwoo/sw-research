@@ -39,21 +39,17 @@ export default function Page() {
         <div className="grid grid-cols-1 sm:grid-cols-2">
 
           {trigger ? (<div className="bg-slate-800 m-4 p-4 rounded-2xl shadow-xl">
+            
+            <Link href="https://forms.gle/2WiSf8LTQnzZ9ifW8">
             <div className="flex justify-center items-center flex-col w-full h-full px-2">
               <div className="text-2xl font-bold text-center text-white">2023 IT편집부 지원</div>
               <div className="w-full bg-slate-50 text-center p-4 mt-2 rounded-xl text-xl font-bold text-slate-900 hover:bg-slate-900 hover:text-white transition duration-300 hover:scale-105">
                 지원하기
               </div>
             </div>
+            </Link>
           </div>) :"" }
-          {/* <div className="bg-slate-800 m-4 p-4 rounded-2xl shadow-xl">
-            <div className="flex justify-center items-center flex-col w-full h-full px-2">
-              <div className="text-2xl font-bold text-center text-white">2023 IT편집부 지원</div>
-              <div className="w-full bg-slate-50 text-center p-4 mt-2 rounded-xl text-xl font-bold text-slate-900 hover:bg-slate-900 hover:text-white transition duration-300 hover:scale-105">
-                지원하기
-              </div>
-            </div>
-          </div> */}
+
 
           <div className="bg-white m-4 p-4 rounded-2xl shadow-xl">
             <div className="text-2xl font-bold text-center">장소</div>
